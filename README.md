@@ -52,12 +52,12 @@ pm2 save
 pm2 startup
 ```
 ## Configuration
-The server uses two constants defined in stun-server.js:
+The server uses two constants defined in stun.js:
 ```
 BIND_IP: 0.0.0.0 (listens on all interfaces).
 BIND_PORT: 3478 (standard STUN port).
 ```
-To change these, edit the constants at the top of stun-server.js.
+To change these, edit the constants at the top of stun.js.
 
 Rate limiting parameters:
 ```
@@ -84,16 +84,16 @@ Example log output:
 ```
 ## Limitations
 
-IPv4 Only: The server currently supports IPv4 addresses. For IPv6, extend the createXorMappedAddress function.
-No Authentication: Lacks MESSAGE-INTEGRITY or USERNAME attributes, making it unsuitable for production without additional security.
-Global Rate Limiting: Limits apply to all clients combined. Per-client limiting requires further modification.
-Single-Threaded: Node.js’s single-threaded nature may limit performance under high load.
+- IPv4 Only: The server currently supports IPv4 addresses. For IPv6, extend the createXorMappedAddress function.
+- No Authentication: Lacks MESSAGE-INTEGRITY or USERNAME attributes, making it unsuitable for production without additional security.
+- Global Rate Limiting: Limits apply to all clients combined. Per-client limiting requires further modification.
+- Single-Threaded: Node.js’s single-threaded nature may limit performance under high load.
 
 ## Troubleshooting
 
-Server not responding: Ensure the server is running (pm2 status or ps aux | grep node) and the port (3478) is not blocked by a firewall.
-Rate limit triggered: If testing locally, reduce the number of requests or adjust MAX_REQUESTS and TIME_WINDOW in the code.
-Errors in logs: Check PM2 logs (pm2 logs stun-server) or console output for details.
+- Server not responding: Ensure the server is running (pm2 status or ps aux | grep node) and the port (3478) is not blocked by a firewall.
+- Rate limit triggered: If testing locally, reduce the number of requests or adjust MAX_REQUESTS and TIME_WINDOW in the code.
+- Errors in logs: Check PM2 logs (pm2 logs stun-server) or console output for details.
 
 ## Contributing
 Contributions are welcome! Please:
