@@ -3,11 +3,11 @@ A lightweight STUN (Session Traversal Utilities for NAT) server implemented in N
 
 ## Features
 
-Handles STUN Binding Requests and Responses (RFC 8489).
-Returns client's public IP and port via XOR-MAPPED-ADDRESS attribute.
-Rate limiting: Limits to 30 requests per 10 seconds, with a 3-second pause if exceeded.
-Logs requests, responses, and rate-limiting events with timestamps.
-Configurable binding IP (0.0.0.0) and port (3478).
+- Handles STUN Binding Requests and Responses (RFC 8489).
+- Returns client's public IP and port via XOR-MAPPED-ADDRESS attribute.
+- Rate limiting: Limits to 30 requests per 10 seconds, with a 3-second pause if exceeded.
+- Logs requests, responses, and rate-limiting events with timestamps.
+- Configurable binding IP (0.0.0.0) and port (3478).
 
 ## Prerequisites
 
