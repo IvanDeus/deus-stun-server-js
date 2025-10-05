@@ -9,14 +9,14 @@ Logs requests, responses, and rate-limiting events with timestamps in UTC+4 (Asi
 Configurable binding IP (0.0.0.0) and port (3478).
 No authentication (suitable for testing, not production).
 
-##Prerequisites
+## Prerequisites
 
 - Node.js: Version 22 or higher.
 - PM2: Process manager for running the server (optional but recommended).
 - Git: For cloning the repository.
 - A system with network access (for testing with STUN clients).
 
-##Installation
+## Installation
 
 Clone the repository:
 ```
