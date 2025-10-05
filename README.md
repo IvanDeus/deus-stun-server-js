@@ -41,9 +41,11 @@ Monitor the server: `pm2 monit`
 
 View logs: `pm2 logs stun-server`
 
-Stop or restart the server:pm2 stop stun-server
-`pm2 restart stun-server`
-
+Stop or restart the server:
+```
+pm2 stop stun-server
+pm2 restart stun-server
+```
 Save the process list to auto-start on system reboot:
 ```
 pm2 save
@@ -51,10 +53,10 @@ pm2 startup
 ```
 ## Configuration
 The server uses two constants defined in stun-server.js:
-``
+```
 BIND_IP: 0.0.0.0 (listens on all interfaces).
 BIND_PORT: 3478 (standard STUN port).
-``
+```
 To change these, edit the constants at the top of stun-server.js.
 
 Rate limiting parameters:
