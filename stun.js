@@ -92,7 +92,7 @@ function createStunResponse(type, transactionId, attributes) {
 
 // Get local timestamp for logging
 function getTimestamp() {
-  return new Date().toLocaleString('en-US', { timeZone: 'Asia/Dubai' }); // UTC+4
+  return new Date().toLocaleString('en-US'); // Server TZ
 }
 
 // Check and enforce rate limiting
