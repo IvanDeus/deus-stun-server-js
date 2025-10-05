@@ -1,6 +1,6 @@
 # deus-stun-server-js - Node.js STUN Server
 A lightweight STUN (Session Traversal Utilities for NAT) server implemented in Node.js. This server handles STUN Binding Requests and responds with the client's public IP and port, facilitating NAT traversal for real-time communication (RTC) applications like WebRTC. It includes rate limiting to enhance stability, pausing for 3 seconds if more than 30 requests are received in a 10-second window.
-Features
+## Features
 
 Handles STUN Binding Requests and Responses (RFC 8489).
 Returns client's public IP and port via XOR-MAPPED-ADDRESS attribute.
