@@ -96,12 +96,7 @@ Example log output:
 - Errors in logs: Check PM2 logs (pm2 logs stun-server) or console output for details.
 
 ## Contributing
-Contributions are welcome! Please:
-
-Fork the repository.
-Create a feature branch (git checkout -b feature/your-feature).
-Commit changes (git commit -m 'Add your feature').
-Push to the branch (git push origin feature/your-feature).
-Open a pull request.
+Contributions are welcome! Please, fork the repository.
+Create a feature branch, commit changes, push to the branch, open a pull request.
 
 2025 [ivan deus]
