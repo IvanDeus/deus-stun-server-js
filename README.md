@@ -14,7 +14,7 @@ A lightweight STUN (Session Traversal Utilities for NAT) server implemented in N
 - Node.js: Version 22 or higher.
 - PM2: Process manager for running the server (optional but recommended).
 - Git: For cloning the repository.
-- A system with network access (for testing with STUN clients).
+- A system with Internet access (for testing with STUN clients all over the world).
 
 ## Installation
 
