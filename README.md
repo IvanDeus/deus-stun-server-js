@@ -7,7 +7,6 @@ Returns client's public IP and port via XOR-MAPPED-ADDRESS attribute.
 Rate limiting: Limits to 30 requests per 10 seconds, with a 3-second pause if exceeded.
 Logs requests, responses, and rate-limiting events with timestamps in UTC+4 (Asia/Dubai).
 Configurable binding IP (0.0.0.0) and port (3478).
-No authentication (suitable for testing, not production).
 
 ## Prerequisites
 
