@@ -30,7 +30,7 @@ Note: The server uses only Node.js built-in modules (dgram), so no additional pa
 Run the server directly with Node.js:
 `node stun.js`
 
-The server will start listening on 0.0.0.0:3478 and log events with UTC+4 timestamps.
+The server will start listening on 0.0.0.0:3478 and log events with timestamps.
 ### Option 2: Using PM2
 To run the server as a managed process with PM2 for better reliability and monitoring:
 
