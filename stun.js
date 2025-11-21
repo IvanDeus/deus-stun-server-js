@@ -1,7 +1,7 @@
 // stun-server.js
 // A basic STUN server implementation in Node.js with rate limiting
 // Handles STUN Binding Requests and responds with the client's public IP and port
-// Rate limit: Pause for 3 seconds if more than 30 requests are received in 10 seconds
+// Rate limit: Pause for 3 seconds if more than 300 requests are received in 10 seconds
 
 const dgram = require('dgram');
 
@@ -16,7 +16,7 @@ const STUN_BINDING_RESPONSE = 0x0101;
 const STUN_ATTR_XOR_MAPPED_ADDRESS = 0x0020;
 
 // Rate limiting constants
-const MAX_REQUESTS = 30;         // Max requests allowed in window
+const MAX_REQUESTS = 300;       // Max requests allowed in window
 const TIME_WINDOW = 10 * 1000;   // 10 seconds in milliseconds
 const PAUSE_DURATION = 3 * 1000; // 3 seconds pause in milliseconds
 
